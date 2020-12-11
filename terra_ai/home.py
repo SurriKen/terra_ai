@@ -1,12 +1,12 @@
-import os, librosa
-import numpy as np
-import IPython.display as ipd # Воспроизведение звуковыйх файлов
+import os, librosa                                   # Работа с папками и файлами, параметризация аудио
+import numpy as np                                   # Библиотека для работы с массивами
+import IPython.display as ipd                        # Воспроизведение звуковыйх файлов
 from IPython import display
 import librosa.display
-from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt                 # Для работы с графиками
 import time
 from tqdm.notebook import tqdm_notebook as tqdm_
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split # Для разбивки на выборки
 from tensorflow.keras.utils import to_categorical
 from matplotlib.patches import Rectangle
 
