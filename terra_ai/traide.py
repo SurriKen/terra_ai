@@ -1,10 +1,10 @@
 import pandas as pd
-import numpy as np
+import numpy as np              # Библиотека для работы с массивами
 from numpy import array
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # Для работы с графиками
 
 from matplotlib.patches import Rectangle 
-import os
+import os                       # Работа с папками и файлами
 from tqdm.notebook import tqdm_notebook as tqdm_
 from IPython import display
 from keras.utils import to_categorical
