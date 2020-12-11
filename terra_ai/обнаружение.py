@@ -1,7 +1,15 @@
-import random, os, operator, cv2, shutil, gdown,sys, time
+import random
+import os
+import operator
+import cv2
+import shutil
+import gdown
+import sys
+import time
 import matplotlib.pyplot as plt
 import albumentations as A
 import subprocess
+
 from subprocess import STDOUT, check_call
 from tqdm.notebook import tqdm
 from IPython import display
