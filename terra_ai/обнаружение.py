@@ -194,9 +194,9 @@ def show_detection_results(sample_name):
 
     transform = A.Compose([A.CenterCrop(detected_img.shape[0], detected_img.shape[1]),], 
                             bbox_params=A.BboxParams(format='yolo', 
-                                                     min_visibility=0.2, 
-                                                    #  label_fields=bbox_class_number
-                                                    )
+                                                     min_visibility=0.2, # предполагаю, что запятая при закомментированной
+                                                     #  label_fields=bbox_class_number    # ниже неё строке
+                                                    )                                     # приведет к ошибке синтаксиса
                             )
     
     img, bboxes, bbox_class_number = взять_пары_картинки_лейблы(sample_name, путь_картинки, путь_лейблы)
