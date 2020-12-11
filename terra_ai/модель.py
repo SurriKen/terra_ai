@@ -1,22 +1,22 @@
 from . import сегментация, повышение_размерности, датасет
-from tensorflow.keras.layers import *
+from tensorflow.keras.layers import * # Все слои модели
 from tensorflow.keras.models import load_model, Sequential # Подключаем модель типа Sequential
-from tensorflow.keras.optimizers import Adam
-import matplotlib.pyplot as plt
-import numpy as np
-import seaborn as sns
+from tensorflow.keras.optimizers import Adam # Оптимизатор для задания шага обучения
+import matplotlib.pyplot as plt # Для работы с графиками
+import numpy as np # Библиотека для работы с массивами
+import seaborn as sns # Библиотека для визуализации данных
 from tensorflow.keras.utils import to_categorical, plot_model # Полкючаем методы .to_categorical() и .plot_model()
-sns.set_style('darkgrid')
+sns.set_style('darkgrid') # Задаем фон всех будущих графиков
 from tensorflow.keras.utils import to_categorical, plot_model # Полкючаем методы .to_categorical() и .plot_model()
 from tensorflow.keras import backend as K # Импортируем модуль backend keras'а
 from tensorflow.keras.optimizers import RMSprop, Adadelta,Adam # Импортируем оптимизатор Adam
 from tensorflow.keras.callbacks import ModelCheckpoint, LambdaCallback
 from tensorflow.keras.models import Model # Импортируем модели keras: Model
 from tensorflow.keras.layers import Input, RepeatVector, Conv2DTranspose, concatenate, Activation, Embedding, Input, MaxPooling2D, Conv2D, BatchNormalization # Импортируем стандартные слои keras
-import importlib.util, sys, gdown,os
+import importlib.util, sys, gdown, os
 import tensorflow as tf
-from PIL import Image
-import time
+from PIL import Image # # Импортируем модель Image для работы с изображениями
+import time # Импортируем для подсчета времени
 from tensorflow.keras.preprocessing import image
 
 def создать_слой(данные, input_shape=None, last_layer=False):
