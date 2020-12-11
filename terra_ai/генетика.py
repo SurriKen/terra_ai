@@ -1,3 +1,4 @@
+# загрузка пакетов
 from . import обнаружение
 from IPython import display
 import gym # здесь лежат все модели для 
