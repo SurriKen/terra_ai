@@ -11,7 +11,7 @@ from tensorflow.keras.utils import to_categorical
 from matplotlib.patches import Rectangle
 
 def показать_примеры_голосовых_команд():
-  i_start = 0.5
+  i_start = 0.5 # какой-комент от Алексея Сафонова
   i_end = 2.5
 
   список_категорий = ['Кондиционер', 'Свет', 'Телевизор', 'Фон']
